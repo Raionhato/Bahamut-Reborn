@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Light-Novel-Bahamut-Reborn</title>
+</head>
+<body>
+    
+    <!-- Ici on met la div en place avec les éléments pour l'apparrition de l'histoire et du narratif -->
+
+    <div id="prologue"> 
+
+            <p id="histoire"></p> <!-- Dans ce paragraphe il n'y auras que l'histoire -->
+
+            <p id="narratif"></p> <!--Ici il n'y auras que le narratif-->
+
+    </div>
+
+    <!-- ************************************************* -->
+
+    <!--Ici on met en place la div qui contiendras les personnages-->
+
+   <div class="container">
+
+        <img src="Images/akira.png" id="akira">
+        <img src="Images/Raion.png" id="raionhato">
+
+    </div>
+
+    <!--***********************************************-->
+    
+    <!--Ici on met la div qui ne contiendras que les dialogues et choix-->
+
+    <div id="dial">
+
+        <p id="dialogue"></p>
+
+
+            <form name="Choix" id="Choix" style="display: none">
+                <select name="Liste" onchange="Choice()">
+                    <option value="">Y aller?</option>
+                    <option value="pages/part1/choix1.html">Oui,Allons-Y</option>
+                    <option value="pages/part1/choix2.html">Non,j'ai autre chose a faire</option>
+                </select>
+            </form>
+        
+    </div>
+
+    <!--********************************************************-->
+    
+    <!--Ici on met le contenu audio-->
+
+    <div id="audio"></div>
+
+    <!--*******************************************-->
+
+    <!--Ici on declare notre script-->
+
+    <script type="text/javascript" src="JS/script.js"></script>
+
+    <!--********************************************-->
+    
+</body>
+</html>
